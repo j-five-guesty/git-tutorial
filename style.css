@@ -1,0 +1,47 @@
+.loader {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.dot1 {
+    left: 40px;
+    bottom: 0;
+}
+
+.dot2 {
+    left: 0;
+    bottom: 40px;
+}
+
+.dot3 {
+    left: 40px;
+    top: 0;
+}
+
+.dot4 {
+    top: 40px;
+    right: 0;
+}
+
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 4s linear infinite;
+}
